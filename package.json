@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:stackerine/ateleir-cat.git",
   "author": "Joe <jsouied@stackerine.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "cd client && yarn test"
+  }
 }
