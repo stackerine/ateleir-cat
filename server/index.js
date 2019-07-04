@@ -3,11 +3,11 @@ const path = require('path');
 
 const app = express();
 
-app.use('/', express.static(path.join(__dirname, '../client/build/')));
-
-app.get('/', (req, res, next) => {
+app.get('/status', (req, res, next) => {
   res.json({ status: 200 });
 });
+
+app.use('/', express.static(path.join(__dirname, '../client/build/')));
 
 app.get('*', (req, res, next) => {
   res.json({ status: 455 });
