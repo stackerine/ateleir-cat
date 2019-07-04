@@ -1,12 +1,13 @@
 {
   "name": "atelier-cat",
-  "version": "0.0.1",
-  "description": "Nicest cat",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:stackerine/ateleir-cat.git",
   "author": "Joe <jsouied@stackerine.com>",
   "license": "MIT",
   "scripts": {
-    "test": "cd client && yarn test"
+    "install": "cd server && npm install",
+    "start": "node ./server/index.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }
